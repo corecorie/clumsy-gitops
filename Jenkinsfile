@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('fff') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
