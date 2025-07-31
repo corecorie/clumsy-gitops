@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clumsy-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clumsy
+  template:
+    metadata:
+      labels:
+        app: clumsy
+    spec:
+      containers:
+        - name: clumsy
+          image: corex125/clumsy:1.0.0-7
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "100m"
+          ports:
+            - containerPort: 8080
