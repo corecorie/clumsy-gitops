@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: clumsy
-          image: corex125/clumsy:1.0.0-7
+          image: corex125/clumsy:1.0.0-9
           resources:
             limits:
               memory: "256Mi"
