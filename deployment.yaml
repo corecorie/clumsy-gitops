@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: clumsy:1.0.0-16
+  name: clumsy:1.0.0-17
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: clumsy:1.0.0-16
+      app: clumsy:1.0.0-17
   template:
     metadata:
       labels:
-        app: clumsy:1.0.0-16
+        app: clumsy:1.0.0-17
     spec:
       containers:
-        - name: clumsy:1.0.0-16
-          image: corex125/clumsy:1.0.0-16
+        - name: clumsy:1.0.0-17
+          image: corex125/clumsy:1.0.0-17
           resources:
             limits:
               memory: "256Mi"
