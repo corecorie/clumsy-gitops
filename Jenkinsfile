@@ -1,7 +1,7 @@
 pipeline {
     agent { label "jenkins-Agent" }
     environment {
-              APP_NAME = "clumsy"
+              APP_NAME = "clumsy-pipeline"
     }
 
     stages {
