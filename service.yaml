@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: clumsy-service
   labels:
-    app: clumsy
+    app: clumsy-app
   annotations:
     argocd.argoproj.io/health-check: "healthy"
 spec:
   selector:
-    app: clumsy
+    app: clumsy-app
 
   ports:
     - port: 8080
